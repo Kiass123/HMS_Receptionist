@@ -1,0 +1,23 @@
+body {
+    background-image: url("dash.jpg");
+  }
+  table {
+    border-collapse: collapse;
+    margin: auto;
+    background-color: rgb(102, 199, 255);
+    
+  }
+  
+  td {
+    padding: 10px;
+  }
+  
+  td a {
+    text-decoration: none;
+    color: rgb(10, 54, 73);
+  }
+  
+  td a:hover {
+    color: rgb(255, 255, 255);
+  }
+  

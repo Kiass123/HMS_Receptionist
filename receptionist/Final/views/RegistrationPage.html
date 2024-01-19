@@ -1,0 +1,120 @@
+<html>
+  <head>
+    <title>Registration Page</title>
+  </head>
+  <link rel="stylesheet" type="text/css" href="astyle.css">
+  <body>
+    <table>
+      
+
+      <tr>
+        <td style="padding: 80px">
+        <form id="data" method="POST" action="../controlers/regCheck.php" enctype="" onsubmit="return regvalidation()" >
+        <fieldset>
+            <legend>REGISTRATION</legend>
+            <table>
+                <tr>
+                    <td>Name </td>
+                    <td>:</td>
+                    <td><input id="name" type="text" name="name" value=""></td>
+                </tr>
+
+                <tr>
+                    <td>Email </td>
+                    <td>:</td>
+                    <td><input id="email" type="email" name="email" value=""></td>
+                </tr>
+                <tr>
+                    <td>User Name </td>
+                    <td>:</td>
+                    <td><input id="username" type="text" name="username" value=""></td>
+                </tr>
+                <tr>
+                    <td>Password </td>
+                    <td>:</td>
+                    <td><input id="password" type="password" name="password" value=""></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password </td>
+                    <td>:</td>
+                    <td><input id="confirm" type="password" name="confirmPass"></td>
+                </tr>
+            </table>
+            <hr>
+            <table>
+                <tr>
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <input id="male" type="radio" name="gender" value="Male" /> Male
+                        <input id="female" type="radio" name="gender" value= "Female"/> Female
+                        <input id="other" type="radio" name="gender" value="Other" /> Other
+                    </fieldset>
+                </tr>
+                <tr>
+                    <fieldset>
+                        <legend>Date of Birth</legend>
+                        <input id="dob" type="date" name="dob">
+                    </fieldset>
+                </tr>
+            </table>
+            <hr>
+            <input id="Rsubmit" type="submit" name="Rsubmit"  value="Confirm">
+            <input type="reset" name="reset" value="Reset">
+        </fieldset>
+    </form></td>
+      </tr>
+
+      <tr align="center">
+      </tr>
+
+    </table>
+
+    <div id="User"></div>
+
+
+    <script>
+		
+      function regvalidation(){
+  
+        let name = document.getElementById('name').value;
+        let email = document.getElementById('email').value;
+        let user = document.getElementById('username').value;
+        let password = document.getElementById('password').value;
+        let conPassword = document.getElementById('confirm').value;
+        let dob = document.getElementById('dob').value;
+        
+  
+        if (name == "") {
+          alert("Please enter your name"); return false;
+        }
+        else if (email == "") {
+          alert("Please enter your email"); return false;
+        }
+        else if (user == "") {
+          alert("Please enter your username"); return false;
+        }
+        else if (password == "" || password.length < 8 ) {
+
+          alert("Please check if empty or  password can not be less than 8 character!"); return false;
+        }
+        else if (conPassword == "" || password != conPassword) {
+          alert("Please confirm your password"); return false;
+        }
+        else if (document.getElementById('male').checked == false && document.getElementById('female').checked == false && document.getElementById('other').checked == false) {
+          alert("Please select your gender"); return false;
+        }
+        else if (dob == "") {
+          alert("Please enter your date of birth"); return false;
+        }
+       
+        else {
+          return true;
+        }
+      }
+    </script>  
+
+  </body>
+</html>
+
+
+

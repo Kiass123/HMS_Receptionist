@@ -1,0 +1,73 @@
+
+  .button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .button1 {
+    background-color: #008CBA;
+  }
+  
+  .button2 {
+    background-color: #f44336;
+  }
+  
+  .button3 {
+    background-color: #4CAF50;
+  }
+  
+  /* Styles for the form */
+  .appointment {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  legend {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    padding: 5px;
+  }
+  
+  input[type=text], input[type=email], input[type=number], input[type=date], input[type=time],input[type=address] ,select {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=radio] {
+    margin-right: 10px;
+  }
+  
+  input[type=submit], input[type=reset] {
+    background-color: #008CBA;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  
+  input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #004c6d;
+  }
+  

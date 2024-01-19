@@ -1,0 +1,13 @@
+/* Style for the table containing the login form */
+.login-table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 650px;
+    border: 1px solid #ccc;
+}
+
+/* Style for the cells within the table */
+.login-cell {
+    padding: 80px;
+}
+

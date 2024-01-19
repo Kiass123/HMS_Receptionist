@@ -1,0 +1,52 @@
+/* Apply styles to the table */
+table {
+    top:auto;
+    bottom: auto;
+    border-collapse: collapse;
+    width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Apply styles to the table headers */
+  th {
+    background-color: rgb(0, 128, 255);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Apply styles to the table cells */
+  td {
+    border: 1px solid black;
+    padding: 10px;
+    width :150px;
+    color: rgb(0, 128, 255);
+    background-color:rgb(255, 255, 255);
+    
+  }
+  
+  /* Apply styles to the buttons */
+  .delete {
+    background-color: rgb(214, 61, 40);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 5px;
+  }
+  .edit {
+    background-color: rgb(38, 110, 254);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 5px;
+  }
+  /* Apply styles to the links */
+  a {
+    color: DodgerBlue;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
